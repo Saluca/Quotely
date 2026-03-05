@@ -1,10 +1,76 @@
-.quote-container {
-  max-width: 600px;
-  margin: 0;
-  padding: 0;
+/* body {
+  background-color: #f5f0e8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.15'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 300px 300px;
+}
+.container {
+  border-left: 3px solid #e8a0a0;
+  padding-left: 2rem;
+} */
+body {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #e0d8e6;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+}
+.container {
+  background-color: #f5f0e8;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  padding: 3rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.highlight {
+  background: linear-gradient(
+    104deg,
+    transparent 0.9%,
+    rgba(255, 235, 59, 0.5) 2.4%,
+    rgba(255, 241, 100, 0.8) 20%,
+    rgba(255, 235, 59, 0.7) 60%,
+    rgba(255, 213, 0, 0.5) 93%,
+    transparent 98%
+  );
+  padding: 2px 6px;
+  border-radius: 1px 4px 2px 3px;
+  box-shadow: inset 0 -2px 0 rgba(200, 180, 0, 0.25);
+}
+.quote-text {
+  font-family: "Mansalva", sans-serif;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 700;
+}
+.quote-author {
+  font-family: "Mansalva", sans-serif;
+  font-size: clamp(1.2rem, 1.5vw, 1.2rem);
+}
+.btn {
+  font-family: "Mansalva", cursive;
+  font-size: 1rem;
+  background: transparent;
+  border: 3px solid #c0392b;
+  color: #c0392b;
+  padding: 0.6rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: rotate(-1deg);
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0px #c0392b;
+}
+
+.btn:hover {
+  transform: rotate(-1deg) translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #c0392b;
+}
+
+.btn:active {
+  transform: rotate(-1deg) translate(2px, 2px);
+  box-shadow: 1px 1px 0px #c0392b;
 }

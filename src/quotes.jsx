@@ -14,15 +14,19 @@ export default function Quotes() {
   }
 
   return (
-    <div>
-      <button onClick={getQuote}>Get Quote</button>
-      <div className="quote-container">
-        {quote && (
-          <>
-            <p> {quote.quote}</p>
-            <p> {quote.author}</p>
-          </>
-        )}
+    <div className="page">
+      <div className="container">
+        <button className="btn" onClick={getQuote}>
+          Get Quote
+        </button>
+        <div className="quote-container">
+          {quote && (
+            <>
+              <p className="quote-text">{quote.quote}</p>
+              <p className="quote-author"> - {quote.author}</p>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
