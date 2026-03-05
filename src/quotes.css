@@ -74,3 +74,21 @@ body {
   transform: rotate(-1deg) translate(2px, 2px);
   box-shadow: 1px 1px 0px #c0392b;
 }
+
+.copy-btn {
+  font-family: "Mansalva", cursive;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border-width: 2px;
+  box-shadow: 2px 2px 0px #c0392b;
+}
+
+.copy-btn:hover {
+  transform: rotate(-1deg) translate(-2px, -2px);
+  box-shadow: 4px 4px 0px #c0392b;
+}
+
+.copy-btn:active {
+  transform: rotate(-1deg) translate(2px, 2px);
+  box-shadow: 1px 1px 0px #c0392b;
+}
