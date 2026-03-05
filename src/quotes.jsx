@@ -1,6 +1,7 @@
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
 import { useState } from "react";
+import "./quotes.css";
 
 export default function Quotes() {
   const [quote, setQuote] = useState(null);
@@ -15,8 +16,14 @@ export default function Quotes() {
   return (
     <div>
       <button onClick={getQuote}>Get Quote</button>
-      {quote && <p>{quote.quote}</p>}
-      {quote && <p>{quote.author}</p>}
+      <div className="quote-container">
+        {quote && (
+          <>
+            <p> {quote.quote}</p>
+            <p> {quote.author}</p>
+          </>
+        )}
+      </div>
     </div>
   );
 }
