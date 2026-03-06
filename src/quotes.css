@@ -44,12 +44,12 @@ body {
   font-family: "Mansalva", sans-serif;
   font-size: clamp(1.2rem, 3vw, 2rem);
   font-weight: 700;
-  color: black;
+  color: #1a1a1a;
 }
 .quote-author {
   font-family: "Mansalva", sans-serif;
   font-size: clamp(1.2rem, 1.5vw, 1.2rem);
-  color: black;
+  color: #1a1a1a;
 }
 .btn {
   font-family: "Mansalva", cursive;
